@@ -1,0 +1,9 @@
+PySide6>=6.7
+sounddevice>=0.4.7
+numpy>=1.26
+
+# macOS only: used to auto-switch the system output device to the loopback
+# (BlackHole) on start/restore on stop, and to request microphone permission
+# up front (capturing a loopback device counts as microphone access).
+pyobjc-framework-CoreAudio>=10.0 ; sys_platform == "darwin"
+pyobjc-framework-AVFoundation>=10.0 ; sys_platform == "darwin"

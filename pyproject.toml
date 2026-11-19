@@ -1,0 +1,5 @@
+[project]
+name = "audio-router"
+version = "0.1.0"
+description = "Route live input audio to multiple output devices"
+requires-python = ">=3.10"
